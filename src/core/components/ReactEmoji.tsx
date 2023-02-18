@@ -42,8 +42,8 @@ function ReactEmoji(
       src={matchedEmoji.imageUrl}
       alt={matchedEmoji.shortName}
       style={{
-        width: 24,
-        height: 24,
+        width: "1em",
+        height: "1em",
         objectFit: "cover",
       }}
       {...others}
