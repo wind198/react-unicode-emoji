@@ -1,13 +1,26 @@
 {
   "name": "react-unicode-emoji",
-  "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "repository": {
+    "url": "https://github.com/wind198/react-unicode-emoji"
+  },
   "type": "module",
+  "description": "A React component that allows Unicode Emoji to be render in an image tag",
+  "keywords": [
+    "React",
+    "Emoji",
+    "Unicode"
+  ],
+  "author": {
+    "email": "tuanbk1908@gmail.com",
+    "name": "Tuan Le"
+  },
+  "main": "dist/index.js",
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
     "build-crawler": "tsc --project tsconfig.crawler.json",
-    "preview": "vite preview",
+    "build-package": "tsc --project tsconfig.package.json",
     "craw": "yarn build-crawler && node crawler/out/index.js"
   },
   "dependencies": {
@@ -16,6 +29,7 @@
     "react-dom": "^18.2.0"
   },
   "peerDependencies": {
+    "puppeteer": "^19.7.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
